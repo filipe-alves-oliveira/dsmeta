@@ -1,12 +1,18 @@
-import icon from '../src/assets/img/notification-icon.svg'
-
-import '../src/components/NotificationButton/styles.css'
+import "../src/components/NotificationButton/styles.css";
+import Header from "./components/Header";
+import SalesCard from "./components/SalesCard";
 
 function App() {
   return (
-    <div className="dsmeta-red-btn">
-      <img src={icon} alt="Notificar" />
-    </div>
+    <>
+      <Header />
+      <main>
+        <section id="sales">
+          <div className="dsmeta-container"></div>
+          <SalesCard />
+        </section>
+      </main>
+    </>
   );
 }
 
