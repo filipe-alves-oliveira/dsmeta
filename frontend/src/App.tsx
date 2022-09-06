@@ -1,7 +1,13 @@
+import icon from '../src/assets/img/notification-icon.svg'
+
+import '../src/components/NotificationButton/styles.css'
+
 function App() {
   return (
-    <h1>Olá Mundo!!!</h1>
-  )
+    <div className="dsmeta-red-btn">
+      <img src={icon} alt="Notificar" />
+    </div>
+  );
 }
 
-export default App
+export default App;
