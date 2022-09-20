@@ -61,7 +61,7 @@ function SalesCard() {
             </tr>
           </thead>
           <tbody>
-            {sales.map((sale) => {
+            {sales.map(sale => {
               return (
                 //qdo faz uma renderizaçao de conteudo baseado em uma lista tem que colocar a palavra key
                 //passando um valor unico para key.
@@ -72,11 +72,11 @@ function SalesCard() {
                   </td>
                   <td>{sale.sellerName}</td>
                   <td className="show992">{sale.visited}</td>
-                  <td className="show992">{sale.visited}</td>
+                  <td className="show992">{sale.deals}</td>
                   <td>{sale.amount.toFixed(2)}</td>
                   <td>
                     <div className="dsmeta-red-btn-container">
-                      <NotificationButton />
+                      <NotificationButton saleId={sale.id}/>
                     </div>
                   </td>
                 </tr>
